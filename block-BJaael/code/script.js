@@ -22,10 +22,8 @@ allbox.addEventListener("mousemove", function() {
     }
     boxcolor[i].innerText = randomText();
     function randomText () {
-        rt = "";
-        for(let i = 0; i < 3; i++){
-            rt += Math.floor(Math.random()*10).toString(10);
-        }
+        let rt = 0;
+        rt += Math.floor(Math.random()*500);
         return rt;
     }
 });
