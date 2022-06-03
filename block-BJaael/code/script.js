@@ -3,7 +3,7 @@ allbox.classList.add("flex");
 let div = document.createElement("div");
 let boxcolor = document.querySelector(".box");
 
-for (let i = 0; i < 250; i++) {
+for (let i = 0; i < 500; i++) {
 div[i] = document.createElement("div");
 div[i].classList.add("box");
 allbox.append(div[i]);
