@@ -1,23 +1,22 @@
-let allbox = document.querySelector(".boxes");
-let box = document.querySelector(".box");
+let firstboxes = document.querySelectorAll(".first li");
+let secondbox = document.querySelector(".second");
 
-for (let i = 0; i < 12; i++) {
-    
-    box[i] = allbox.children[i];
+firstboxes.forEach((box, index) => {
+    box.addEventListener("click", (event) => {
+        event.target.innerText = index + 1;
 
-    box[i].addEventListener("click", function() {
-        box[i].innerText = i + 1;
+        setTimeout(() => {
+            event.target.innerText = "";
+        }, 5000);
     });
+});
 
-}
 
+secondbox.addEventListener("click", (event) => {
+    let text = event.target.dataset.text;
+    event.target.innerText = text;
 
-let allbox2 = document.children[0].children[1].children[2].children[1].children[1];
-let box2 = allbox2.querySelector(".box");
-
-allbox2.addEventListener("click", function() {
-    for (let j = 0; j < 12; j++) {
-        box2[j] = allbox2.children[j];
-        box2[j].innerText = j + 1;
-    }
+    setTimeout(() => {
+        event.target.innerText = "";
+    }, 5000);
 });
