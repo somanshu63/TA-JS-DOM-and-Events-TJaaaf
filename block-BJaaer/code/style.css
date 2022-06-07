@@ -91,3 +91,21 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
+.modaldata{
+  width: 600px;
+  height: 500px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  display: none;
+}
+.modaldata p{
+  font-weight: 500;
+  font-size: 20px;
+  padding: 1rem;
+}
+.modaldata a{
+  float: right;
+  text-decoration: none;
+  color: lightgrey;
+}
