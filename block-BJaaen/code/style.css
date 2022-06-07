@@ -36,7 +36,6 @@
   }
   
   .container {
-    text-align: center;
     max-width: 1280px;
     margin: 0 auto;
   }
@@ -81,7 +80,7 @@
         padding: 0 2rem;
     }
     .user-rock, .comp-rock{
-        margin-left: 5rem;
+        margin-left: 4rem;
     }
     .reload{
         padding-left: 2rem;
@@ -99,4 +98,19 @@
         font-weight: 600;
         text-align: center;
         text-transform: capitalize;
+    }
+
+
+    @media screen and (max-width:992px) and (min-width:768px) {
+        
+        .container{
+            max-width: 960px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+       
+	.container{
+		max-width: 720px;
+	}
     }
