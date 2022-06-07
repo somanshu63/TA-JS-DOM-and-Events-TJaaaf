@@ -19,15 +19,7 @@ function handleSubmit(event) {
     userInfo.range = form.elements.range.value;
     userInfo.youLove = form.elements.gender.value;
     userInfo.terms = form.elements.terms.checked;
-    if(form.elements.fiction.checked == true){
-        userInfo.bookGenre = fiction.value;
-    }
-    else if(form.elements.non-fiction.checked == true){
-        userInfo.bookGenre = nonFiction.value;
-    }
-    else if(form.elements.adventure.checked == true){
-        userInfo.bookGenre = adventure.value;
-    }
+    userInfo.bookGenre = form.elements.book.value;
     modal();
 }
 
@@ -39,7 +31,7 @@ function modal() {
     name.innerText = `Hello ${userInfo.name}`;
     name.style.fontSize = "36px";
     let email = document.createElement("p");
-    email.innerText = `Email: Somanshu63@gmail.com`;
+    email.innerText = `Email: ${userInfo.email}`;
     let love = document.createElement("p");
     love.innerText = `You Love: ${userInfo.youLove}`;
     let color = document.createElement("p");
