@@ -68,11 +68,9 @@ label{
 }
 .error{
   border: 2px solid red;
-  background-color: lightPINK;
 }
 .success{
   border: 2px solid green;
-  background-color: lightgreen;
 }
 .addsuccess{
   color: green;
