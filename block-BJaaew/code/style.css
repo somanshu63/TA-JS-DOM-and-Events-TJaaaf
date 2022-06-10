@@ -36,7 +36,7 @@ h1{
 .flex-30{
   flex: 0 1 30%;
 }
-.customizebuttons{
+.customizedButton{
   padding: 3px 5px ;
   background-color: black;
   border: 1px solid black;
